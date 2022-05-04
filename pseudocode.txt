@@ -1,0 +1,19 @@
+ pseudo code 1
+
+declare variable named slides and assign the value of the css selector class
+when #nextButton clicked(on-click event snippet)
+    show next slide(next slide snippet)
+
+when #previousButton clicked(on-click event snippet)
+     show previous slide(previous slide snippet)
+
+when either #nextButton or #previousButton clicked(display slides snippet)
+         display slides
+
+
+pseudo code 2
+declare the date object and name it today
+declare variables for day, month, year,hour,minute and seconds
+
+When #page loads (time snippet)
+     display the formatted time

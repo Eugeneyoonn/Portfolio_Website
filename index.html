@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/>
+  <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+  <script type="text/javascript" src="js/clock.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+
+  <title>EUGENE YOON</title>
+</head>
+
+
+  <body onload="startTime()">
+<div id="clockdate">
+  <div class="clockdate-wrapper">
+    <div id="clock"></div>
+    <div id="date"></div>
+  </div>
+</div>
+
+   
+
+  <div class="wrapper">
+    <section class="leftname">
+        <aside>
+            <header>
+              <h2>
+                <b>EUGENE YOON</b>
+              </h2>
+              <nav>
+                <ul class="menu">
+                  <li><a href="index.html" class="header">
+                    HOME</a></li>
+                    <li><a href="works.html" class="header">
+                      WORKS</a></li>
+                      <li><a href="about.html" class="header">
+                        ABOUT</a></li>
+                        <li><a href="resume.html" class="header">
+                          RESUME</a></li>
+                        </ul>
+                      </nav>
+                    </header>
+                  </aside>
+                </section>
+                <section class="left">
+                  <article class="Me">
+                  <h3 class="myname">Hi 👋
+                    My name is Eugene</h3>
+                    <h3>
+                      Im a multi-faceted artist based in Queens, New York drawing inspiration from photography and fashion design.</h3>
+                      <h3>
+                        Currently a sophomore at Cornell.
+                      </h3>
+                    </article>
+                  </section>
+
+                <section class="right">
+                  <article class="Latestwork">
+                    <h3 class="latest"><em>LATEST WORK ⬇️</em></h3>
+                    <figure>
+                      <div class = "slideshow-container">
+                        
+                        <div class = "mySlides fade">
+                          <div class="numbertext"> 1/11 </div>
+                      <img src="images/img_7659.png" alt="Wander in the Void (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 3/11 </div>
+                      <img src="slideshow/roslyn1.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 4/11 </div>
+                      <img src="slideshow/roslyn3.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 5/11 </div>
+                      <img src="slideshow/roslyn4.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 6/11 </div>
+                      <img src="slideshow/roslyn5.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 7/11 </div>
+                      <img src="slideshow/roslyn6.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 8/11 </div>
+                      <img src="slideshow/roslyn7.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 9/11 </div>
+                      <img src="slideshow/slum1.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div>
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 10/11 </div>
+                      <img src="slideshow/slum2.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div> 
+                      <div class = "mySlides fade">
+                          <div class="numbertext"> 11/11 </div>
+                      <img src="slideshow/slum3.png" alt="Out and About (2020)"
+                      height="440" width="380" />
+                    </div> 
+                    <div class = "mySlides fade">
+                          <div class="numbertext"> 11/12 </div>
+                     <video controls autoplay muted width="500px" height="500px" 
+        > 
+          
+        <source src="slideshow/eternalp1.mp4" 
+            type="video/mp4"> 
+    </video> 
+</video>
+                    </div>
+                    
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+                    <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+                  </div>
+                  <br>
+     
+                      <figcaption>"Wander in the Void (2020)</figcaption>
+                    </figure>
+                    <!-- Source: (original work) Eugene Yoon -->
+                  </article>
+                </section>
+              </div>
+
+              <div class="bottomleft">
+                <p class=email1> <a href="mailto:ey98@cornell.edu" title="EY98@CORNELL.EDU"  target="_blank" class="mailto">EY98@CORNELL.EDU</a> </p>
+              </div>
+
+              <div class="bottomright">
+                <audio id = "my_audio" src="audio/meetingagaininthevoid.mp3"
+                loop="loop" autoplay = "autoplay" controls autoplay>
+              </audio>
+            </div>
+        
+              <script type="text/javascript">
+              
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 5 seconds
+}
+              </script>
+          </body>
+          </html>
